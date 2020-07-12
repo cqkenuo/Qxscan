@@ -14,4 +14,12 @@ BYï¼šF_Dao QQ:166014073
 
 å¦‚ä½•ä½¿ç”¨ï¼Ÿ
 
+<<<<<<< HEAD:Qxscanv.1.1.txt
+£ºpythonÔËÐÐQxscan.py
+
+20.07.12¸üÐÂ:
+	ÓÅ»¯ÁËwebbpÄ£¿é
+	ÐÂÔö²éÑ¯ÓòÃûÎïÀíÎ»ÖÃ
+=======
 ï¼špython3è¿è¡ŒQxscan.py
+>>>>>>> 5f85ce2d212192b741dc2c47e57eaeb82a26aaa8:Qxscanè¯´æ˜Žv.1.0.txt
