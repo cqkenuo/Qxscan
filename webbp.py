@@ -29,6 +29,7 @@ def zid(wenjian):
 	return words
 
 def qqq(zidian,url):
+	jishu = 0
 	while True:
 		if zidian.empty():
 			return
@@ -40,14 +41,19 @@ def qqq(zidian,url):
 			}
 			i = i.replace("%0a","")
 			i = i.replace("%0A","")
+			i = i.replace("\n","")
+			i = i.replace("\r","")
 			i.strip()
 			urls = url+i
 			try:
-				r = requests.get(urls,timeout=5,headers=header)
+				r = requests.head(urls,timeout=5,headers=header)
 				if r.status_code != 404 and r.status_code != 405 and r.status_code != 400:
 					print("\n[+]"+urls+"\nResponse code: ["+str(r.status_code)+"]")
 			except:
+				jishu+=1
 				print("错误")
+				if jishu > 10:
+					exit()
 				pass
 def zidian():
 	global lujins
